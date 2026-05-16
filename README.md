@@ -1,45 +1,61 @@
 # Creative Operations Portfolio
 
-映像制作会社向けに内製した、
-業務基幹システム・制作支援ツール群のポートフォリオです。
+映像制作会社の実務をもとにした、業務改善・内製システムのポートフォリオです。
 
-## 背景
-少人数で複数拠点の制作業務を回す中で、
-案件管理・人材配置・制作進行・売上管理の属人化が課題になっていました。
+実運用しているシステムをベースに、個人情報・顧客情報・案件情報をダミーデータ化した資料を掲載しています。
 
-それらを改善するため、
-AI駆動開発を活用しながら、
-業務システムを内製・運用しています。
+## 公開中のプロジェクト
 
-## 主な実績
-- 受注〜人選〜売上〜請求管理システム
-- 人選タイムライン可視化
-- 売上ダッシュボード
-- メディア管理
-- 印刷スケジュール生成
+### order-db / 業務基幹システム
+
+受注管理、人選、売上、メディア管理を中心に、案件進行を一元管理する業務基幹システムです。
+
+- 詳細資料: [docs/order-db.md](docs/order-db.md)
+- 主な機能:
+  - 受注管理
+  - 人選管理
+  - 売上管理
+  - メディア管理
+
+### staff-db / スタッフ業務支援システム
+
+外注スタッフを含む全スタッフ向けに、マイページ、申請・承認、NGカレンダー、CA請求、研修動画、ナレッジ共有を提供する業務支援システムです。
+
+- 詳細資料: [docs/staff-db.md](docs/staff-db.md)
+- 主な機能:
+  - スタッフマイページ
+  - NGカレンダー
+  - CA請求
+  - 研修動画
+  - ナレッジ共有
+
+### automation / 制作工程自動化ツール群
+
+制作下地生成、Final Cut Pro 連携、SDカード自動コピーなどの制作工程自動化ツールを整備しています。
+
+現在は公開準備中で、詳細資料・スクリーンショットは未掲載です。
 
 ## 技術スタック
+
 - Python
 - Flask
 - SQLite
 - JavaScript
 - GitHub
 - VPS / systemd
+- ffmpeg
+- Final Cut Pro 関連ワークフロー
+- AI支援開発
 
-## Screenshots
+## AI活用開発フロー
 
-### Order Management
-![Order List](screenshots/order-db/order-list.png)
-
-### Staff Assignment Timeline
-![Staff Assign](screenshots/order-db/staff-assign-timeline.png)
-
-### Sales Dashboard
-![Sales Dashboard](screenshots/order-db/sales-dashboard.png)
-
-### Media Management
-![Media](screenshots/order-db/media-management.png)
+- ChatGPT: 整理・壁打ち・リスク確認
+- Claude: 設計・レビュー
+- Codex: 実装・差分生成
+- GitHub: 変更管理
 
 ## 注意事項
-掲載内容は、実運用システムをベースに
-個人情報・顧客情報・会場名等をダミーデータ化したポートフォリオ用構成です。
+
+- 本リポジトリはポートフォリオ用資料です
+- 本番コード・実データ・顧客情報は含みません
+- スクリーンショットはダミーデータを使用しています
